@@ -54,7 +54,7 @@ if uploaded_file is not None:
     st.write("✅ Predictions:")
     st.write(batch_data.head())
     csv = batch_data.to_csv(index=False).encode('utf-8')
-    st.download_button("Download Predictions CSV", csv, file_name='predicted_classes.csv', mime='text
+    st.download_button("Download Predictions CSV", csv, file_name='predicted_classes.csv', mime='text/csv')
     
 import streamlit as st
 import pandas as pd
